@@ -1,4 +1,4 @@
-package com.step.assignments.oop_part_1.inheritance;
+package com.step.assignments.oop_part_1.inheritance_vehicle;
 
 public class Audi extends Car {
     public Audi(String color, int speed, int gears) {

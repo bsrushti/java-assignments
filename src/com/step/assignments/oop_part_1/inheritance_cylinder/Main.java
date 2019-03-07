@@ -1,4 +1,4 @@
-package com.step.assignments.oop_part_1.Cylinder;
+ package com.step.assignments.oop_part_1.inheritance_cylinder;
 
 public class Main {
     public static void main(String[] args) {

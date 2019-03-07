@@ -1,4 +1,4 @@
-package com.step.assignments.oop_part_1.Pool_Area;
+package com.step.assignments.oop_part_1.inheritance_poolArea;
 
 public class Main {
     public static void main(String[] args) {

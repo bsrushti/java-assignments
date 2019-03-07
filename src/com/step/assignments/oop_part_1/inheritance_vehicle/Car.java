@@ -1,4 +1,4 @@
-package com.step.assignments.oop_part_1.inheritance;
+package com.step.assignments.oop_part_1.inheritance_vehicle;
 
 public class Car extends Vehicle {
 

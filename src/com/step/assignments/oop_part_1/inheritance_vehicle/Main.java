@@ -1,4 +1,4 @@
-package com.step.assignments.oop_part_1.inheritance;
+package com.step.assignments.oop_part_1.inheritance_vehicle;
 
 public class Main {
     public static void main(String[] args) {
