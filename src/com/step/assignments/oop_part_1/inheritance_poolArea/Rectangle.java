@@ -2,12 +2,14 @@ package com.step.assignments.oop_part_1.inheritance_poolArea;
 
 
 public class Rectangle {
-    private double length=0, width=0;
+    private double length, width;
 
     public Rectangle(double width, double length) {
-        if(length>0) this.length=length;
+        this.width = width;
+        this.length = length;
 
-        if(width>0) this.width=width;
+        if(length<0) this.length=0;
+        if(width<0) this.width=0;
     }
 
     public double getLength() {

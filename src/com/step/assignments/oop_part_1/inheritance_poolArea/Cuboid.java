@@ -2,12 +2,12 @@ package com.step.assignments.oop_part_1.inheritance_poolArea;
 
 
 public class Cuboid extends Rectangle {
-    private double height = 0;
+    private double height;
 
     public Cuboid(double width, double length, double height) {
         super(width, length);
-
-        if(height>0) this.height=height;
+        this.height = height;
+        if(height<0) this.height=0;
     }
 
     public double getHeight() {
