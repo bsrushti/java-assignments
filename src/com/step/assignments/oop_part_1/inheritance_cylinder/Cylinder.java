@@ -1,13 +1,11 @@
 package com.step.assignments.oop_part_1.inheritance_cylinder;
 
 public class Cylinder extends Circle{
-    private double height;
+    private double height = 0;
 
     public Cylinder(double radius, double height) {
         super(radius);
-        if(height<0) this.height=0;
-        else
-        this.height = height;
+        if(height>0) this.height=height;
     }
 
     public double getHeight() {

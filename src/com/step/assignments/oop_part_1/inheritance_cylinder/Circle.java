@@ -1,12 +1,10 @@
 package com.step.assignments.oop_part_1.inheritance_cylinder;
 
 public class Circle {
-    private double radius;
+    private double radius = 0;
 
     public Circle(double radius) {
-        if(radius<0) this.radius=0;
-        else
-        this.radius = radius;
+        if(radius>0) this.radius=radius;
     }
 
     public double getRadius() {

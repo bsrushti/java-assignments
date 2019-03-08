@@ -61,13 +61,16 @@ public class NumberToWords {
 
     public static int reverse(int number) {
         int digitCount = getDigitCount(number);
-        String num = "";
+        int num = 0;
         while (number!=0) {
-            int lastDigit = number%10;
-            num += lastDigit;
+            num = num+number%10;
+            num = num+(num*10);
             number = number/10;
         }
-        return Integer.parseInt(num);
+
+//        int lengthDifference = digitCount - num.length();
+//        System.out.println(lengthDifference);
+        return num;
     }
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.step.assignments;
+package com.step.assignments.oop_part_1.simple_calculator;
 
 public class SimpleCalculator {
     private double firstNumber;
