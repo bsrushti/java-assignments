@@ -8,9 +8,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class JewelleryBoxTest {
 
     @Test
-    @DisplayName("should return total jwellery count of jewellery box")
+    @DisplayName("should return total jewellery count of jewellery box")
 
-    void shouldReturnTotalJwelleryInsideBox() {
+    void shouldReturnTotalJewelleryInsideBox() {
         JewelleryBox _5thLevelBox = new JewelleryBox();
 
         JewelleryBox _4thLevelBox = new JewelleryBox(_5thLevelBox);
@@ -26,4 +26,20 @@ class JewelleryBoxTest {
         assertEquals(2, _1stLevelBox.totalJewelleries());
     }
 
+    @Test
+    @DisplayName("should return 0 when no jewellery provided")
+    void shouldReturnZero() {
+        JewelleryBox _1stLevelBox = new JewelleryBox();
+
+        assertEquals(0, _1stLevelBox.totalJewelleries());
+    }
+
+    @Test
+    @DisplayName("should return 1 when one jewellery provided")
+    void shouldReturnOne() {
+        Jewellery ring = new Jewellery("ring");
+        JewelleryBox _1stLevelBox = new JewelleryBox(ring);
+
+        assertEquals(1, _1stLevelBox.totalJewelleries());
+    }
 }
