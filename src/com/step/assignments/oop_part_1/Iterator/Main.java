@@ -13,11 +13,12 @@ public class Main {
 
         ListIterator listIterator = new ListIterator(integers);
 
-        listIterator.next();
-        listIterator.next();
-        listIterator.next();
-        listIterator.next();
-        listIterator.next();
+        System.out.println(listIterator.next());
+        System.out.println(listIterator.next());
+        System.out.println(listIterator.next());
+        System.out.println(listIterator.next());
+        System.out.println(listIterator.next());
+        System.out.println(listIterator.next());
 
     }
 }

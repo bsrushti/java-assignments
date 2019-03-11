@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 public class ListIterator {
-    private List list;
+    private List<Integer> list;
     private int index;
 
     public ListIterator(List list) {
@@ -16,11 +16,11 @@ public class ListIterator {
         return index !=list.size();
     }
 
-    public void next() {
+    public Integer next() {
         if (hasNext() == false) {
             throw new NoSuchElementException("my exception : NoSuchElementException");
         } else {
-            System.out.println(list.get(++index));
+            return list.get(++index);
         }
     }
 
