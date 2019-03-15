@@ -19,4 +19,8 @@ public class Stack {
         this.stack.add(0,element);
     }
 
+    public void removeElement() {
+        this.stack.remove(0);
+    }
+
 }

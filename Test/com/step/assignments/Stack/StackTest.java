@@ -20,10 +20,33 @@ class StackTest {
     }
 
     @Test
-    void shouldAddElementInTheBeginningOfStack() {
+    void shouldAddOneElementInTheBeginningOfStack() {
         actualStack.addElement(4);
         expectedStack.add(4);
 
         assertEquals(actualStack.getStack(),expectedStack);
     }
+
+    @Test
+    void shouldAddTwoElementInStack() {
+        actualStack.addElement(4);
+        actualStack.addElement(5);
+
+        expectedStack.add(5);
+        expectedStack.add(4);
+
+        assertEquals(actualStack.getStack(),expectedStack);
+    }
+
+    @Test
+    void shouldRemoveTopElementFromStack() {
+        actualStack.addElement(4);
+        actualStack.addElement(5);
+        actualStack.removeElement();
+
+        expectedStack.add(4);
+
+        assertEquals(actualStack.getStack(),expectedStack);
+    }
+
 }
