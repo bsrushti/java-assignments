@@ -23,4 +23,7 @@ public class Stack {
         this.stack.remove(0);
     }
 
+    public boolean hasElement(int element) {
+        return this.stack.contains(element);
+    }
 }

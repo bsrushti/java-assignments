@@ -49,4 +49,21 @@ class StackTest {
         assertEquals(actualStack.getStack(),expectedStack);
     }
 
+    @Test
+    void shouldReturnTrueIfElementIsPresentInStack() {
+        actualStack.addElement(4);
+        actualStack.addElement(5);
+        actualStack.addElement(2);
+
+        assertTrue(actualStack.hasElement(5));
+    }
+
+    @Test
+    void shouldReturnFalseIfElementIsPresentInStack() {
+        actualStack.addElement(4);
+        actualStack.addElement(5);
+        actualStack.addElement(2);
+
+        assertFalse(actualStack.hasElement(1));
+    }
 }
