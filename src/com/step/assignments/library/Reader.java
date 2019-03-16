@@ -21,6 +21,12 @@ public class Reader {
         borrowedBooks.add(book);
     }
 
+    public void printBookNames() {
+        for (Book book: borrowedBooks) {
+            System.out.println(book.getName());
+        }
+    }
+
     public boolean hasBorrowed(Book book) {
         return borrowedBooks.contains(book);
     }
