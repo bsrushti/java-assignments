@@ -1,4 +1,5 @@
-package com.step.assignments;
+package com.step.assignments.initial_assignments;
+import com.step.assignments.MinutesAndSeconds;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
