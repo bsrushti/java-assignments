@@ -1,5 +1,7 @@
 package com.step.assignments.Exceptions;
 
+import com.step.assignments.oop_part_1.polymorphism_excercise.Console;
+
 public class divideByZero {
 
     public static int divide(int a, int b) {
