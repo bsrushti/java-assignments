@@ -64,6 +64,6 @@ class StackTest {
         actualStack.addElement(5);
         actualStack.addElement(2);
 
-        assertFalse(actualStack.hasElement(1));
+        assertFalse(actualStack.hasElement(0));
     }
 }
